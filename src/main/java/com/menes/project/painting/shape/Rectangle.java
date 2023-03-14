@@ -5,7 +5,9 @@ import java.awt.Graphics;
 import java.awt.Point;
 import java.awt.geom.Rectangle2D;
 
-public class Rectangle extends AShape {
+public class
+
+Rectangle extends AShape {
 	boolean s1 = false;
 	boolean s2 = false;
 	boolean s3 = false;
