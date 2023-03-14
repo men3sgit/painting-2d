@@ -4,10 +4,7 @@ import java.awt.BorderLayout;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
-	
-import East.EastFunction;
-import North.MenuBar;
-import North.ToolBar;
+
 
 public class Application extends JFrame {
 	public static void main(String[] args) {
