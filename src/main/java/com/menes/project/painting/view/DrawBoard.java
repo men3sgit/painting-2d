@@ -21,17 +21,8 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import Shape.AShape;
-import Shape.Circle;
-import Shape.Eraser;
-import Shape.Line;
-import Shape.Oval;
-import Shape.Pencil;
-import Shape.Rectangle;
-import Shape.Square;
-import Shape.Triangle;
 
-public class DrawingBoard extends JPanel {
+public class DrawBoard extends JPanel {
 	JLabel label; // title text
 	JPanel title = new JPanel(); // title pane
 	Color color = Color.cyan; // color of shapes
