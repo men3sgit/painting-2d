@@ -13,17 +13,17 @@ public class Application extends JFrame {
 	ImageIcon icon = new ImageIcon("paint-brush.png"); // creat icon for my program
 	MenuBar bar; // creat MenuBar set for Frame
 	StatusBar command; // show progress activities status in texts
-	DrawingBoard painting; // Area display whatever you drawing
+	DrawBoard painting; // Area display whatever you drawing
 	ToolBar toolBar; // ToolBar of program
 	EastFunction colorControl; // show image status 
 
 	// Constructor
-	public miniCAD() {
+	public Application() {
 		super("painting-2d"); // set title for program
 		
 		
 		command = new StatusBar();
-		painting = new DrawingBoard(command);
+		painting = new DrawBoard(command);
 		colorControl = new EastFunction(painting); 
 		toolBar = new ToolBar(colorControl);
 		/*

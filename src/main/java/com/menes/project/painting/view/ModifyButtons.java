@@ -11,13 +11,12 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JToolBar;
 
-import miniCAD.DrawingBoard;
 
 public class ModifyButtons extends JToolBar {
 	JButton move, scissor, u, r, trash, select, copy, paste, nothing; // creat control buttons
 	ImageIcon icon; // icon of button
 
-	public ModifyButtons(DrawingBoard d) {
+	public ModifyButtons(DrawBoard d) {
 		setLayout(new GridLayout(1, 5));
 		setBorderPainted(false);
 		setBackground(new Color(50, 50, 50));

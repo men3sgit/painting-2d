@@ -16,7 +16,7 @@ public class StrokesSize extends JToolBar{
 	JSlider size = new JSlider();
 	JLabel value = new JLabel();
 	JLabel title = new JLabel();
-	public StrokesSize(DrawingBoard d) {
+	public StrokesSize(DrawBoard d) {
 		setBackground(new Color(50,50,50));
 		setBorderPainted(false);
 		title.setText("Thickness :   ");

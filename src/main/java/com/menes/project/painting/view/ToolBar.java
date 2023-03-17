@@ -6,20 +6,15 @@ import java.awt.Dimension;
 import javax.swing.BorderFactory;
 import javax.swing.JToolBar;
 
-import East.ColorPane;
-import East.EastFunction;
-import East.StrokesSize;
-import miniCAD.DrawingBoard;
-import miniCAD.StatusBar;
 
 public class ToolBar extends JToolBar {
 	ColorPane colors; // color board import java
 
 	// DrawingButtons draw; // Drawing
 	ModifyButtons control;
-	DrawingBoard paint;
+	DrawBoard paint;
 	StatusBar command;
-	File file;
+	FileToolBar file;
 	StrokesSize s;
 
 	public ToolBar(EastFunction e) {
@@ -28,7 +23,7 @@ public class ToolBar extends JToolBar {
 		this.s = e.getStroke();
 		setBorderPainted(false);
 
-		file = new File(e.getDraw());
+		file = new FileToolBar(e.getDraw());
 		control = new ModifyButtons(e.getDraw());
 		// draw = new DrawingButtons(e.draw, command,s);
 		setPreferredSize(new Dimension(0, 50));

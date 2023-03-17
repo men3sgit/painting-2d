@@ -1,4 +1,4 @@
-gpackage com.menes.project.painting.view;
+package com.menes.project.painting.view;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -245,9 +245,9 @@ public class MenuBar extends JMenuBar {
 					new HelpContent();
 					break;
 				case "New Window":
-					miniCAD kid = new miniCAD();
-					kid.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-					kid.setLocation(0, 0);
+					 Application app = new Application();
+					app.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+					app.setLocation(0, 0);
 					t.paint.getCommand().getContent().setText(t.paint.getCommand().getContent().getText() +"New Window "+ "\n............\n");
 					// t.command.setVisibleForInfor(true);
 					break;

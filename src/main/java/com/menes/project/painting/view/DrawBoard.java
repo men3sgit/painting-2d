@@ -1,5 +1,7 @@
 package com.menes.project.painting.view;
 
+import com.menes.project.painting.shape.*;
+
 import java.awt.BasicStroke;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -44,7 +46,7 @@ public class DrawBoard extends JPanel {
 	boolean highlight = false;
 	List<Point> twoLines = new ArrayList<Point>();
 
-	public DrawingBoard(StatusBar c) {
+	public DrawBoard(StatusBar c) {
 		this.command = c;
 		label = new JLabel("Drawing Board");
 		label.setFont(new Font("", Font.BOLD, 20));

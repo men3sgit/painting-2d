@@ -16,7 +16,6 @@ import javax.swing.JColorChooser;
 import javax.swing.JPanel;
 import javax.swing.JToolBar;
 
-import miniCAD.DrawingBoard;
 
 public class ColorPane extends JToolBar {
 	JButton[] colors = new JButton[24]; // creat buttons contain color
@@ -24,9 +23,9 @@ public class ColorPane extends JToolBar {
 	JPanel center = new JPanel(); // panel contain color buttons
 	// constructor
 	ModeSetColor mode; // mode for object for setColor (AShapes or BackGround)
-	CurrentlyColor color;
-	DrawingBoard draw;
-	public ColorPane(DrawingBoard d ,CurrentlyColor c) {
+	DisplayCurrentColor color;
+	DrawBoard draw;
+	public ColorPane(DrawBoard d ,DisplayCurrentColor c) {
 		this.color = c;
 		this.draw = d;
 		setBorderPainted(false);
@@ -139,7 +138,7 @@ public class ColorPane extends JToolBar {
 	public ModeSetColor getMode() {
 		return mode;
 	}
-	public CurrentlyColor getColor() {
+	public DisplayCurrentColor getColor() {
 		return color;
 	}
 	

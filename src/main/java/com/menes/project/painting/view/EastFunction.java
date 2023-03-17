@@ -8,18 +8,17 @@ import java.awt.GridLayout;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 
-import miniCAD.DrawingBoard;
 
 public class EastFunction extends JPanel{
 	
 	ColorPane colors; // color board import java
-	CurrentlyColor colorStatus = new CurrentlyColor();
-	DrawingBoard draw; 
+	DisplayCurrentColor colorStatus = new DisplayCurrentColor();
+	DrawBoard draw;
 	StrokesSize stroke;
 	JPanel fakethis = new JPanel();
 	JPanel center = new JPanel();
 	DrawingButtons buttons;
-	public EastFunction(DrawingBoard d) {
+	public EastFunction(DrawBoard d) {
 		this.draw = d;
 		stroke = new StrokesSize(draw);
 		setBackground(new Color(123,123,123));
@@ -44,10 +43,10 @@ public class EastFunction extends JPanel{
 	public ColorPane getColors() {
 		return colors;
 	}
-	public CurrentlyColor getColorStatus() {
+	public DisplayCurrentColor getColorStatus() {
 		return colorStatus;
 	}
-	public DrawingBoard getDraw() {
+	public DrawBoard getDraw() {
 		return draw;
 	}
 	public StrokesSize getStroke() {
