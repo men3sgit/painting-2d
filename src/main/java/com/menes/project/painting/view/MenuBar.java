@@ -14,10 +14,6 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-import East.DrawingButtons;
-import East.EastFunction;
-import miniCAD.miniCAD;
-
 public class MenuBar extends JMenuBar {
 	JMenu options; // Menu
 	JButton buttons; // Button inside file
@@ -39,15 +35,15 @@ public class MenuBar extends JMenuBar {
 		add(options = new JMenu("File"));
 		options.setForeground(color);
 		options.setMnemonic(KeyEvent.VK_F);
-		icon = new ImageIcon("new2.png");
+		icon = new ImageIcon("./icons/new2.png");
 		neww = new JMenuItem("New", icon);
 		options.add(neww);
 
-		icon = new ImageIcon("open2.png");
+		icon = new ImageIcon("./icons/open2.png");
 		open = new JMenuItem("Open", icon);
 		options.add(open);
 
-		icon = new ImageIcon("save2.png");
+		icon = new ImageIcon("./icons/save2.png");
 		save = new JMenuItem("Save", icon);
 		options.add(save);
 
@@ -55,27 +51,27 @@ public class MenuBar extends JMenuBar {
 		options.setForeground(color);
 		options.setMnemonic(KeyEvent.VK_M);
 
-		icon = new ImageIcon("selecte.png");
+		icon = new ImageIcon("./icons/selected.png");
 		select = new JMenuItem("Select", icon);
 		options.add(select);
 
-		icon = new ImageIcon("Nothing.png");
+		icon = new ImageIcon("./icons/Nothing.png");
 		cancel = new JMenuItem("Cancel", icon);
 		options.add(cancel);
 
-		icon = new ImageIcon("scissors2.png");
+		icon = new ImageIcon("./icons/scissors2.png");
 		cut = new JMenuItem("Cut", icon);
 		options.add(cut);
 
-		icon = new ImageIcon("paste1.png");
+		icon = new ImageIcon("./icons/paste1.png");
 		paste = new JMenuItem("Paste", icon);
 		options.add(paste);
 
-		icon = new ImageIcon("move2.png");
+		icon = new ImageIcon("./icons/move2.png");
 		move = new JMenuItem("Move", icon);
 		options.add(move);
 
-		icon = new ImageIcon("remove2.png");
+		icon = new ImageIcon("./icons/remove2.png");
 		delete = new JMenuItem("Delete", icon);
 		options.add(delete);
 //
@@ -91,31 +87,31 @@ public class MenuBar extends JMenuBar {
 		add(options = new JMenu("Draw"));
 		options.setForeground(color);
 		options.setMnemonic(KeyEvent.VK_D);
-		icon = new ImageIcon("pencil2.png");
+		icon = new ImageIcon("./icons/pencil2.png");
 		options.add(pencil = new JMenuItem("Pencil", icon));
 		pencil.setBackground(Color.white);
 
-		icon = new ImageIcon("line.png");
+		icon = new ImageIcon("./icons/line.png");
 		options.add(line = new JMenuItem("Line", icon));
 		line.setBackground(Color.white);
 
-		icon = new ImageIcon("oval.png");
+		icon = new ImageIcon("./icons/oval.png");
 		options.add(circle = new JMenuItem("Circle", icon));
 		circle.setBackground(Color.white);
 
-		icon = new ImageIcon("rec.png");
+		icon = new ImageIcon("./icons/rec.png");
 		options.add(rectangle = new JMenuItem("Rectangle", icon));
 		rectangle.setBackground(Color.white);
 
-		icon = new ImageIcon("square3.png");
+		icon = new ImageIcon("./icons/square3.png");
 		options.add(square = new JMenuItem("Square", icon));
 		square.setBackground(Color.white);
 
-		icon = new ImageIcon("triangle.png");
+		icon = new ImageIcon("./icons/triangle.png");
 		options.add(triangle = new JMenuItem("Triangle", icon));
 		triangle.setBackground(Color.white);
 
-		icon = new ImageIcon("eraser2.png");
+		icon = new ImageIcon("./icons/eraser2.png");
 		options.add(eraser = new JMenuItem("Eraser", icon));
 		eraser.setBackground(Color.white);
 //		options.add(buttons = t.draw.cir);
@@ -136,30 +132,30 @@ public class MenuBar extends JMenuBar {
 		// add button and event for Window
 		options.add(newW = new JMenuItem("New Window"));
 		options.add(show = new JMenu("Show"));
-		icon = new ImageIcon("toado.png");
+		icon = new ImageIcon("./icons/toado.png");
 		show.add(locationS = new JMenuItem("Location", icon));
-		icon = new ImageIcon("tool.png");
+		icon = new ImageIcon("./icons/tool.png");
 		show.add(toolbarS = new JMenuItem("ToolBar", icon));
-		icon = new ImageIcon("gridlines.png");
+		icon = new ImageIcon("./icons/gridlines.png");
 		show.add(linesS = new JMenuItem("Gridlines", icon));
-		icon = new ImageIcon("highlight.png");
+		icon = new ImageIcon("./icons/highlight.png");
 		show.add(hlS = new JMenuItem("Highlight",icon));
 
 		options.add(hide = new JMenu("Hide"));
-		icon = new ImageIcon("toado.png");
+		icon = new ImageIcon("./icons/toado.png");
 		hide.add(locationH = new JMenuItem("Location", icon));
-		icon = new ImageIcon("tool.png");
+		icon = new ImageIcon("./icons/tool.png");
 		hide.add(toolbarH = new JMenuItem("ToolBar", icon));
-		icon = new ImageIcon("gridlines.png");
+		icon = new ImageIcon("./icons/gridlines.png");
 		hide.add(linesH = new JMenuItem("Gridlines", icon));
-		icon = new ImageIcon("highlight.png");
+		icon = new ImageIcon("./icons/highlight.png");
 		hide.add(hlH = new JMenuItem("Highlight",icon));
 
 
 		add(options = new JMenu("Help"));
 		options.setForeground(color);
 		options.setMnemonic(KeyEvent.VK_H);
-		icon = new ImageIcon("helppp.png");
+		icon = new ImageIcon("./icons/helppp.png");
 		// show contents into help
 		help = new JMenuItem("Help Content", icon);
 		options.add(help);
@@ -167,7 +163,7 @@ public class MenuBar extends JMenuBar {
 		add(options = new JMenu("Exit"));
 		options.setForeground(color);
 		options.setMnemonic(KeyEvent.VK_E);
-		icon = new ImageIcon("exittt.png");
+		icon = new ImageIcon("./icons/exittt.png");
 		options.add(exit = new JMenuItem("Exit", icon));
 
 		ActionListener action = new ActionListener() {
@@ -181,7 +177,7 @@ public class MenuBar extends JMenuBar {
 						@Override
 						public void actionPerformed(ActionEvent e) {
 							if (e.getSource() == neww) {
-								int a = JOptionPane.showConfirmDialog(null, "There are unsaved changes to Auto-Kid",
+								int a = JOptionPane.showConfirmDialog(null, "There are unsaved changes to Painting-2D",
 										"Do you want to save your work ?", JOptionPane.YES_NO_CANCEL_OPTION);
 								if (a == 0 || a == 1) {
 									t.paint.reSet();

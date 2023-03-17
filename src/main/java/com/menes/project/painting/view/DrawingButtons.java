@@ -78,7 +78,7 @@ public class DrawingButtons extends JToolBar {
 		
 		// initializing line button
 		setLayout(new GridLayout(1, 9));
-		icon = new ImageIcon("line3.png");
+		icon = new ImageIcon("./icons/line3.png");
 		line = new JButton(icon);
 		line.addActionListener(action);
 		line.setFocusable(false);
@@ -87,7 +87,7 @@ public class DrawingButtons extends JToolBar {
 		add(line);
 		
 		// initializing circle button
-		icon = new ImageIcon("circel4.png");
+		icon = new ImageIcon("./icons/circle4.png");
 		cir = new JButton(icon);
 		cir.addActionListener(action);
 		cir.setFocusable(false);
@@ -96,7 +96,7 @@ public class DrawingButtons extends JToolBar {
 		add(cir);
 		
 		// initializing rectangle button
-		icon = new ImageIcon("ellipse4.png");
+		icon = new ImageIcon("./icons/ellipse4.png");
 		oval = new JButton(icon);
 		oval.addActionListener(action);
 		oval.setFocusable(false);
@@ -105,7 +105,7 @@ public class DrawingButtons extends JToolBar {
 		add(oval); 	
 				
 		// initializing rectangle button
-		icon = new ImageIcon("square3.png");
+		icon = new ImageIcon("./icons/square3.png");
 		rec = new JButton(icon);
 		rec.addActionListener(action);
 		rec.setFocusable(false);
@@ -114,7 +114,7 @@ public class DrawingButtons extends JToolBar {
 		add(rec);
 		
 		// initializing triangle button
-		icon = new ImageIcon("triangle2.png");
+		icon = new ImageIcon("./icons/triangle2.png");
 		triangle = new JButton(icon);
 		triangle.addActionListener(action);
 		triangle.setFocusable(false);
@@ -123,7 +123,7 @@ public class DrawingButtons extends JToolBar {
 		add(triangle);
 		
 		// initializing pencil button
-		icon = new ImageIcon("pencil2.png");
+		icon = new ImageIcon("./icons/pencil2.png");
 		pen = new JButton(icon);
 		pen.addActionListener(action);
 		pen.setFocusable(false);
@@ -132,7 +132,7 @@ public class DrawingButtons extends JToolBar {
 		add(pen);
 		
 		// initializing eraser button
-		icon = new ImageIcon("eraser2.png");
+		icon = new ImageIcon("./icons/eraser2.png");
 		era = new JButton(icon);
 		era.addActionListener(action);
 		era.setFocusable(false);
@@ -140,7 +140,7 @@ public class DrawingButtons extends JToolBar {
 		era.setBorder(BorderFactory.createEmptyBorder());
 		add(era);
 		
-		icon = new ImageIcon("fill1.png");
+		icon = new ImageIcon("./icons/fill1.png");
 		fill = new JButton(icon);
 		fill.addActionListener(action);
 		fill.setFocusable(false);

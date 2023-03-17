@@ -11,7 +11,7 @@ import javax.swing.JPanel;
 public class DisplayCurrentColor extends JPanel{
 	JLabel title = new JLabel("Current Color");
 	JPanel center = new JPanel();
-	public CurrentlyColor() {
+	public DisplayCurrentColor() {
 		title.setForeground(new Color(255,222,50));
 		title.setBackground(new Color(123,123,123));
 		title.setOpaque(true);

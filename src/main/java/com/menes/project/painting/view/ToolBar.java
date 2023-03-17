@@ -59,7 +59,7 @@ public class ToolBar extends JToolBar {
 		return control;
 	}
 
-	public DrawingBoard getPaint() {
+	public DrawBoard getPaint() {
 		return paint;
 	}
 
@@ -67,7 +67,7 @@ public class ToolBar extends JToolBar {
 		return command;
 	}
 
-	public File getFile() {
+	public FileToolBar getFile() {
 		return file;
 	}
 

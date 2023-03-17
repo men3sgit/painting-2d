@@ -20,37 +20,37 @@ public class ModifyButtons extends JToolBar {
 		setLayout(new GridLayout(1, 5));
 		setBorderPainted(false);
 		setBackground(new Color(50, 50, 50));
-		icon = new ImageIcon("move2.png");
+		icon = new ImageIcon("./icons/move2.png");
 		move = new JButton(icon);
 		move.setBackground(getBackground());
 		move.setFocusable(false);
 		move.setBorder(BorderFactory.createEmptyBorder());
 
-		icon = new ImageIcon("selecte.png");
+		icon = new ImageIcon("./icons/selected.png");
 		select = new JButton(icon);
 		select.setBackground(getBackground());
 		select.setFocusable(false);
 		select.setBorder(BorderFactory.createEmptyBorder());
 
-		icon = new ImageIcon("scissors2.png");
+		icon = new ImageIcon("./icons/scissors2.png");
 		scissor = new JButton(icon);
 		scissor.setBackground(getBackground());
 		scissor.setFocusable(false);
 		scissor.setBorder(BorderFactory.createEmptyBorder());
 
-		icon = new ImageIcon("paste1.png");
+		icon = new ImageIcon("./icons/paste1.png");
 		paste = new JButton(icon);
 		paste.setBackground(getBackground());
 		paste.setFocusable(false);
 		paste.setBorder(BorderFactory.createEmptyBorder());
 
-		icon = new ImageIcon("nothing.png");
+		icon = new ImageIcon("./icons/nothing.png");
 		nothing = new JButton(icon);
 		nothing.setBackground(getBackground());
 		nothing.setFocusable(false);
 		nothing.setBorder(BorderFactory.createEmptyBorder());
 
-		icon = new ImageIcon("copy1.png");
+		icon = new ImageIcon("./icons/copy1.png");
 		copy = new JButton(icon);
 		copy.setBackground(getBackground());
 		copy.setFocusable(false);
@@ -60,7 +60,7 @@ public class ModifyButtons extends JToolBar {
 
 		r = d.getRedo();
 
-		icon = new ImageIcon("remove2.png");
+		icon = new ImageIcon("./icons/remove2.png");
 		trash = new JButton(icon);
 		trash.setBackground(getBackground());
 		trash.setFocusable(false);

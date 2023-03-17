@@ -11,14 +11,13 @@ import javax.swing.JButton;
 import javax.swing.JOptionPane;
 import javax.swing.JToolBar;
 
-import miniCAD.DrawingBoard;
 
 public class FileToolBar extends JToolBar{
 	JButton neww, open, save;
 	ImageIcon icon;
 	Color color = new Color(220,100,0);
 	
-	public FileToolBar(DrawingBoard d) {
+	public FileToolBar(DrawBoard d) {
 		ActionListener action = new ActionListener() {
 
 			@Override
@@ -41,7 +40,7 @@ public class FileToolBar extends JToolBar{
 		setLayout(new FlowLayout(FlowLayout.LEFT));
 		setBackground(new Color(50,50,50));
 		setBorderPainted(false);
-		icon = new ImageIcon("new2.png");
+		icon = new ImageIcon("./icons/new2.png");
 		neww = new JButton("New", icon);
 		neww.addActionListener(action);
 		neww.setForeground(color);
@@ -50,7 +49,7 @@ public class FileToolBar extends JToolBar{
 		addSeparator();	
 		add(neww);
 
-		icon = new ImageIcon("open2.png");
+		icon = new ImageIcon("./icons/open2.png");
 		open = new JButton("Open", icon);
 		open.setForeground(color);
 		open.setBackground(getBackground());
@@ -58,7 +57,7 @@ public class FileToolBar extends JToolBar{
 		addSeparator();
 		add(open);
 
-		icon = new ImageIcon("save2.png");
+		icon = new ImageIcon("./icons/save2.png");
 		save = new JButton("Save", icon);
 		save.setForeground(color);
 		save.setBackground(getBackground());
